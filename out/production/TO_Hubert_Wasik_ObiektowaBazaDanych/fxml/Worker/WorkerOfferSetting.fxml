@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #b477d7, #7637d5);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Worker.WorkerOfferSettingController">
+   <children>
+      <TextFlow layoutX="131.0" layoutY="880.0" prefHeight="20.0" prefWidth="440.0" style="-fx-background-color: #303030; -fx-text-alignment: center; -fx-background-radius: 20px 20px 0 0;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-family: Calibry; -fx-font-weight: 100;" text="Hubert Wąsik - Technologie Obiektowe, labolatoria" textAlignment="CENTER" wrappingWidth="441.8162841796875" />
+         </children>
+      </TextFlow>
+      <TableView fx:id="tabela_uslug" layoutX="46.0" layoutY="267.0" prefHeight="324.0" prefWidth="609.0" stylesheets="@../style.css">
+         <columns>
+            <TableColumn fx:id="nazwa_uslugi" editable="false" prefWidth="161.0" sortable="false" text="Nazwa usługi" />
+            <TableColumn fx:id="opis_uslugi" editable="false" prefWidth="242.0" sortable="false" text="Opis usługi" />
+            <TableColumn fx:id="cena" editable="false" prefWidth="100.0" sortable="false" text="Cena[zł]" />
+            <TableColumn fx:id="czas" editable="false" prefWidth="100.0" sortable="false" text="Czas [min]" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="181.0" fitWidth="315.0" layoutX="22.0" layoutY="30.0">
+         <image>
+            <Image url="@../../assets/Gracja LOGO.png" />
+         </image>
+      </ImageView>
+      <Button id="menu-buttons" layoutX="223.0" layoutY="706.0" mnemonicParsing="false" onAction="#addOffer" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Dodaj ofertę" />
+      <Text fill="WHITE" layoutX="377.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zarządzanie ofertą gabinetu">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="390.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poniżesz przedstawione zostały dane">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Text>
+      <TextField id="text_input" fx:id="offer_name" layoutX="132.0" layoutY="606.0" prefHeight="26.0" prefWidth="191.0" promptText="Nazwa usługi - tekst" stylesheets="@../style.css" />
+      <Button id="menu-buttons" layoutX="223.0" layoutY="817.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Powrót do menu" />
+      <Text fill="WHITE" layoutX="412.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="uslug gabinetu kosmetycznego">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="155.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aby dodać usługę, wpisz danie i zatwierdź przyciskiem.">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="112.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aby usunąć usługę, zaznacz rząd i zatwierdź usunięcie przyciskiem.">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Text>
+      <Button id="menu-buttons" layoutX="223.0" layoutY="762.0" mnemonicParsing="false" onAction="#removeOffer" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Usuń ofertę" />
+      <TextField id="text_input" fx:id="offer_describe" layoutX="351.0" layoutY="606.0" prefHeight="26.0" prefWidth="191.0" promptText="Opis usługi - tekst" stylesheets="@../style.css" />
+      <TextField id="text_input" fx:id="offer_price" layoutX="132.0" layoutY="658.0" prefHeight="26.0" prefWidth="191.0" promptText="Koszt usługi - int" stylesheets="@../style.css" />
+      <TextField id="text_input" fx:id="offer_time" layoutX="351.0" layoutY="658.0" prefHeight="26.0" prefWidth="191.0" promptText="Czas trwania usługi - int" stylesheets="@../style.css" />
+   </children>
+</Pane>

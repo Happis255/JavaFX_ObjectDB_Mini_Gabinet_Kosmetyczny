@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #b477d7, #7637d5);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Worker.WorkerMenuController">
+   <children>
+      <TextFlow layoutX="131.0" layoutY="880.0" prefHeight="20.0" prefWidth="440.0" style="-fx-background-color: #303030; -fx-text-alignment: center; -fx-background-radius: 20px 20px 0 0;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-family: Calibry; -fx-font-weight: 100;" text="Hubert Wąsik - Technologie Obiektowe, labolatoria" textAlignment="CENTER" wrappingWidth="441.8162841796875" />
+         </children>
+      </TextFlow>
+      <ImageView fitHeight="295.0" fitWidth="513.0" layoutX="108.0" layoutY="34.0">
+         <image>
+            <Image url="@../../assets/Gracja LOGO.png" />
+         </image>
+      </ImageView>
+      <Button id="menu-buttons" layoutX="223.0" layoutY="704.0" mnemonicParsing="false" onAction="#ManageAppoitment" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Zarządzaj wizytami" />
+      <Text fill="WHITE" layoutX="237.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu pracownika" wrappingWidth="228.5859375">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button id="menu-buttons" layoutX="223.0" layoutY="649.0" mnemonicParsing="false" onAction="#ManageOffer" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Zarządzaj ofertą" />
+      <Button id="menu-buttons" layoutX="223.0" layoutY="594.0" mnemonicParsing="false" onAction="#ManageCard" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Zarządzaj książeczką zdr." />
+      <Button id="menu-buttons" layoutX="223.0" layoutY="539.0" mnemonicParsing="false" onAction="#ViewAccountData" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Dane twojego konta" />
+      <Button id="menu-buttons" layoutX="223.0" layoutY="759.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Wyjście" />
+   </children>
+</Pane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #b477d7, #7637d5);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Worker.WorkerAppoitmentSettingController">
+   <children>
+      <TextFlow layoutX="131.0" layoutY="880.0" prefHeight="20.0" prefWidth="440.0" style="-fx-background-color: #303030; -fx-text-alignment: center; -fx-background-radius: 20px 20px 0 0;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-family: Calibry; -fx-font-weight: 100;" text="Hubert Wąsik - Technologie Obiektowe, labolatoria" textAlignment="CENTER" wrappingWidth="441.8162841796875" />
+         </children>
+      </TextFlow>
+      <ImageView fitHeight="181.0" fitWidth="315.0" layoutX="22.0" layoutY="30.0">
+         <image>
+            <Image url="@../../assets/Gracja LOGO.png" />
+         </image>
+      </ImageView>
+      <Button id="menu-buttons" layoutX="223.0" layoutY="817.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Powrót do menu" />
+      <Button id="menu-buttons" layoutX="223.0" layoutY="706.0" mnemonicParsing="false" onAction="#acceptAppoitment" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Potwierdź wizytę" />
+      <Button id="menu-buttons" layoutX="223.0" layoutY="761.0" mnemonicParsing="false" onAction="#declineAppoitment" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Odrzuć wizytę" />
+      <Text fill="WHITE" layoutX="383.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Przegląd wizyt w gabinecie">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="390.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poniżesz przedstawione zostały dane">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="398.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dotyczących wizyt znajdujących się">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="449.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="w systemie gabinetu">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="185.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wizyty mogą być potwierdzane bądź odrzucane.">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="115.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aby wprowadzić opcję, zaznacz wizytę i wybierz odpowiednią akcję.">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tabela_wizyt" layoutX="46.0" layoutY="267.0" prefHeight="416.0" prefWidth="609.0" stylesheets="@../style.css">
+         <columns>
+            <TableColumn fx:id="imie_klienta" prefWidth="92.0" text="Imię klienta" />
+            <TableColumn fx:id="nazwisko_klienta" prefWidth="130.0" text="Nazwisko klienta" />
+            <TableColumn fx:id="nazwa_uslugi" prefWidth="110.0" text="Nazwa usługi" />
+            <TableColumn fx:id="pracownik" prefWidth="89.0" text="Pracownik" />
+            <TableColumn fx:id="data" prefWidth="88.0" text="Data" />
+            <TableColumn fx:id="status" prefWidth="99.0" text="Status" />
+         </columns>
+      </TableView>
+      <TextFlow layoutX="131.0" layoutY="880.0" prefHeight="20.0" prefWidth="440.0" style="-fx-background-color: #303030; -fx-text-alignment: center; -fx-background-radius: 20px 20px 0 0;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-family: Calibry; -fx-font-weight: 100;" text="Hubert Wąsik - Technologie Obiektowe, labolatoria" textAlignment="CENTER" wrappingWidth="441.8162841796875" />
+         </children>
+      </TextFlow>
+   </children>
+</Pane>

@@ -22,7 +22,7 @@
             <Image url="@../assets/Gracja LOGO.png" />
          </image>
       </ImageView>
-      <Button id="menu-buttons" layoutX="223.0" layoutY="691.0" mnemonicParsing="false" onAction="#zaloguj_do_systemu" prefHeight="40.0" prefWidth="255.0" stylesheets="@style.css" text="Zaloguj się" />
+      <Button id="menu-buttons" layoutX="223.0" layoutY="704.0" mnemonicParsing="false" onAction="#zaloguj_do_systemu" prefHeight="40.0" prefWidth="255.0" stylesheets="@style.css" text="Zaloguj się" />
       <TextField id="login_input" fx:id="login_input" layoutX="255.0" layoutY="591.0" prefHeight="26.0" prefWidth="191.0" promptText="Login" stylesheets="@style.css" />
       <Text fill="WHITE" layoutX="96.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplikacja prezentuje proste wykorzystanie obiektowych baz danych.">
          <font>
@@ -45,5 +45,6 @@
          </font>
       </Text>
       <PasswordField id="password_input" fx:id="password_input" layoutX="255.0" layoutY="643.0" prefHeight="26.0" prefWidth="191.0" promptText="Hasło" stylesheets="@style.css" />
+      <Button id="menu-buttons" layoutX="223.0" layoutY="759.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="255.0" stylesheets="@style.css" text="Wyjście" />
    </children>
 </Pane>

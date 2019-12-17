@@ -1,0 +1,23 @@
+#menu-buttons {
+    -fx-background-color:  #303030;
+    -fx-font-size:  20;
+    -fx-text-fill:   white;
+    -fx-font-family:  Calibri;
+    -fx-font-weight:  900;
+    -fx-background-radius: 20px;
+}
+
+#menu-buttons:hover {
+    -fx-background-color:  white;
+    -fx-text-fill:   #303030;
+}
+
+#password_input, #login_input {
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: white;
+    -fx-font-size:  15;
+    -fx-text-fill:  white;
+    -fx-font-family:  Calibri;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: white;
+}

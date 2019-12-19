@@ -22,7 +22,7 @@ public class Main extends Application {
         Scene scene = new Scene(stackPane);
         stage.setScene(scene);
         stage.setTitle("TO_Hubert_Wasik_Obiektowa_Baza_Danych");
-        stage.getIcons().add(new Image("pliki_java/icon.png"));
+        stage.getIcons().add(new Image("assets/icon.png"));
         stage.setResizable(false);
         stage.show();
     }

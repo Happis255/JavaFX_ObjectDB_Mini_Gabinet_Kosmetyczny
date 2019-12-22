@@ -1,0 +1,26 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2019-12-21 18:26:58 #1 store] 
+Database 'C:\Users\Huber\OneDrive\Pulpit\TO_Hubert_Wasik_ObiektowaBazaDanych\src\db\bazaDanychGabinetu.odb' has been recovered (tr. 1-7)
+
+[2019-12-21 18:26:58 #2 store] 
+Database 'C:\Users\Huber\OneDrive\Pulpit\TO_Hubert_Wasik_ObiektowaBazaDanych\src\db\bazaDanychGabinetu.odb' is opened by 8904@DESKTOP-KA8D7DP
+
+[2019-12-21 18:26:58 #3 store] 
+Configuration path: ?
+
+[2019-12-21 18:26:58 #4 type] 
+Type pliki_java.Kontakt is not enhanced.
+
+[2019-12-21 18:26:58 #5 type] 
+Type pliki_java.Uzytkownik is not enhanced.
+
+[2019-12-21 18:26:58 #6 type] 
+Type pliki_java.Klient is not enhanced.
+
+[2019-12-21 18:26:58 #7 type] 
+Type pliki_java.Ksiazeczka_Zdrowia is not enhanced.
+
+[2019-12-21 18:26:58 #8 type] 
+Type pliki_java.Pracownik is not enhanced.
+

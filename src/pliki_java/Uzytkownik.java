@@ -54,6 +54,34 @@ public class Uzytkownik implements Serializable {
         return informacje_dodatkowe;
     }
 
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public void setHaslo(String haslo) {
+        this.haslo = haslo;
+    }
+
+    public void setImie(String imie) {
+        this.imie = imie;
+    }
+
+    public void setNazwisko(String nazwisko) {
+        this.nazwisko = nazwisko;
+    }
+
+    public void setData_urodzenia(Date data_urodzenia) {
+        this.data_urodzenia = data_urodzenia;
+    }
+
+    public void setPlec(String plec) {
+        this.plec = plec;
+    }
+
+    public void setInformacje_dodatkowe(String informacje_dodatkowe) {
+        this.informacje_dodatkowe = informacje_dodatkowe;
+    }
+
     @Override
     public String toString() {
         return "Uzytkownik{" +

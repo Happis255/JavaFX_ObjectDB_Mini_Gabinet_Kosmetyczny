@@ -39,7 +39,19 @@ public class Pracownik extends Uzytkownik implements Serializable {
     }
 
     public enum StopienWyksztalcenia{
-        wyksztalcenie_podstawowe, wyksztalcenie_gimnazjalne, wyksztalcenie_zasadnicze, wyksztalcenie_srednie, wyksztalcenie_wyzsze;
+        wyksztalcenie_podstawowe("Wykształcenie podstawowe"),
+        wyksztalcenie_gimnazjalne("Wykształcenie gimnazjalne"),
+        wyksztalcenie_zasadnicze("Wykształcenie zasadniecze"),
+        wyksztalcenie_srednie("Wykształcenie średnie"),
+        wyksztalcenie_wyzsze("Wykształcenie wyższe");
+
+        private String nazwa;
+        StopienWyksztalcenia(String nazwa) {
+            this.nazwa = nazwa;
+        }
+        public String getNazwa(){
+            return this.nazwa;
+        }
     }
 
     public long getId() {
@@ -60,6 +72,26 @@ public class Pracownik extends Uzytkownik implements Serializable {
 
     public int getWyplata() {
         return wyplata;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setId_kontaktu(long id_kontaktu) {
+        this.id_kontaktu = id_kontaktu;
+    }
+
+    public void setId_ksiazeczkiZdrowia(long id_ksiazeczkiZdrowia) {
+        this.id_ksiazeczkiZdrowia = id_ksiazeczkiZdrowia;
+    }
+
+    public void setStopienWyksztalcenia(StopienWyksztalcenia stopienWyksztalcenia) {
+        this.stopienWyksztalcenia = stopienWyksztalcenia;
+    }
+
+    public void setWyplata(int wyplata) {
+        this.wyplata = wyplata;
     }
 
     @Override

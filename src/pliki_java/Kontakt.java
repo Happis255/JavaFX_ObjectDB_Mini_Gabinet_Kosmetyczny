@@ -69,4 +69,31 @@ public class Kontakt implements Serializable {
         return e_mail;
     }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setTelefon(int telefon) {
+        this.telefon = telefon;
+    }
+
+    public void setZIP_miasto(String ZIP_miasto) {
+        this.ZIP_miasto = ZIP_miasto;
+    }
+
+    public void setUlica(String ulica) {
+        this.ulica = ulica;
+    }
+
+    public void setNumer_budynku(int numer_budynku) {
+        this.numer_budynku = numer_budynku;
+    }
+
+    public void setNumer_mieszkania(int numer_mieszkania) {
+        this.numer_mieszkania = numer_mieszkania;
+    }
+
+    public void setE_mail(String e_mail) {
+        this.e_mail = e_mail;
+    }
 }

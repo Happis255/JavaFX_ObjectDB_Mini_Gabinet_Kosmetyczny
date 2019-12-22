@@ -62,4 +62,36 @@ public class Ksiazeczka_Zdrowia implements Serializable {
     public String getOslabienia() {
         return oslabienia;
     }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setRozrusznik(Boolean rozrusznik) {
+        this.rozrusznik = rozrusznik;
+    }
+
+    public void setHermofilia(Boolean hermofilia) {
+        this.hermofilia = hermofilia;
+    }
+
+    public void setLuszczyca(Boolean luszczyca) {
+        this.luszczyca = luszczyca;
+    }
+
+    public void setAlergia(String alergia) {
+        this.alergia = alergia;
+    }
+
+    public void setGoraczka(Boolean goraczka) {
+        this.goraczka = goraczka;
+    }
+
+    public void setCiaza(Boolean ciaza) {
+        this.ciaza = ciaza;
+    }
+
+    public void setOslabienia(String oslabienia) {
+        this.oslabienia = oslabienia;
+    }
 }

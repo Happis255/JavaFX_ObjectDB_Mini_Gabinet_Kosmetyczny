@@ -1,11 +1,21 @@
 package Controller.Worker;
 
 import Controller.MainScreenController;
+import ModelTabeli.KsiazeczkaZdrowia;
+import ModelTabeli.OfertaGabinetu;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+import pliki_java.Ksiazeczka_Zdrowia;
+import pliki_java.Usluga;
+
+import javax.persistence.Query;
+import java.util.List;
 
 public class WorkerOfferSettingController {
 
@@ -22,20 +32,21 @@ public class WorkerOfferSettingController {
     public TextField offer_name;
 
     @FXML
-    public TableView tabela_uslug;
+    public TableView <OfertaGabinetu> tabela_uslug;
 
     @FXML
-    public TableColumn nazwa_uslugi;
+    public TableColumn <OfertaGabinetu, String> nazwa_uslugi;
 
     @FXML
-    public TableColumn opis_uslugi;
+    public TableColumn <OfertaGabinetu, String> opis_uslugi;
 
     @FXML
-    public TableColumn cena;
+    public TableColumn <OfertaGabinetu, Integer> cena;
 
     @FXML
-    public TableColumn czas;
+    public TableColumn <OfertaGabinetu, Integer> czas;
 
+    private ObservableList<OfertaGabinetu> lista_danych = FXCollections.observableArrayList();
     private MainScreenController mainController;
 
     public void setMainController(MainScreenController mainController) {
@@ -53,4 +64,32 @@ public class WorkerOfferSettingController {
     @FXML
     public void removeOffer(ActionEvent actionEvent) {
     }
+
+    public void loadData(){
+        /* Dodana zostaje przykładowa usługa */
+
+
+        try {
+            Query q1 = mainController.getEm().createQuery("SELECT p FROM Usluga p");
+            List lista_uslug = q1.getResultList();
+            Usluga temp = null;
+            while (!lista_uslug.isEmpty()) {
+                temp = (Usluga) lista_uslug.get(0);
+                lista_danych.add(new OfertaGabinetu(temp.getNazwa_uslugi(), temp.getOpis_uslugi(), temp.getKoszt(), temp.getCzas()));
+                lista_uslug.remove(0);
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        setCellValuesFactory();
+    }
+
+    private void setCellValuesFactory() {
+        nazwa_uslugi.setCellValueFactory(new PropertyValueFactory<>("nazwa_uslugi"));
+        opis_uslugi.setCellValueFactory(new PropertyValueFactory<>("opis_uslugi"));
+        cena.setCellValueFactory(new PropertyValueFactory<>("cena"));
+        czas.setCellValueFactory(new PropertyValueFactory<>("czas"));
+        tabela_uslug.setItems(lista_danych);
+    }
+
 }

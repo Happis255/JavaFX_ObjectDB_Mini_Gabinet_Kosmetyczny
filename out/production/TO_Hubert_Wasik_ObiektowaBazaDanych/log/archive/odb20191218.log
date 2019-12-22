@@ -427,3 +427,47 @@ Type pliki_java.Ksiazeczka_Zdrowia is not enhanced.
 [2019-12-18 22:21:31 #7 type] 
 Type pliki_java.Pracownik is not enhanced.
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2019-12-18 22:23:09 #1 store] 
+Database 'C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src\db\bazaDanychGabinetu.odb' is opened by 8188@DESKTOP-JITKCKO
+
+[2019-12-18 22:23:09 #2 store] 
+Configuration path: ?
+
+[2019-12-18 22:23:09 #3 type.registry] 
+New type pliki_java.Kontakt
+
+[2019-12-18 22:23:09 #4 type] 
+Type pliki_java.Kontakt is not enhanced.
+
+[2019-12-18 22:23:09 #5 type.registry] 
+New type pliki_java.Uzytkownik
+
+[2019-12-18 22:23:09 #6 type.registry] 
+New type pliki_java.Klient
+
+[2019-12-18 22:23:09 #7 type] 
+Type pliki_java.Uzytkownik is not enhanced.
+
+[2019-12-18 22:23:09 #8 type] 
+Type pliki_java.Klient is not enhanced.
+
+[2019-12-18 22:23:09 #9 type.registry] 
+New type pliki_java.Klient$StatusKlienta
+
+[2019-12-18 22:23:09 #10 type.registry] 
+New type pliki_java.Ksiazeczka_Zdrowia
+
+[2019-12-18 22:23:09 #11 type] 
+Type pliki_java.Ksiazeczka_Zdrowia is not enhanced.
+
+[2019-12-18 22:23:09 #12 type.registry] 
+New type pliki_java.Pracownik
+
+[2019-12-18 22:23:09 #13 type] 
+Type pliki_java.Pracownik is not enhanced.
+
+[2019-12-18 22:23:09 #14 type.registry] 
+New type pliki_java.Pracownik$StopienWyksztalcenia
+

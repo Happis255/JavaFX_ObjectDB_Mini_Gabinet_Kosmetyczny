@@ -9,10 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.util.Duration;
-import pliki_java.Klient;
-import pliki_java.Kontakt;
-import pliki_java.Ksiazeczka_Zdrowia;
-import pliki_java.Pracownik;
+import pliki_java.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -59,45 +56,94 @@ public class MainScreenController {
         Klient klient;
         Pracownik pracownik;
         Ksiazeczka_Zdrowia ksiazeczka;
-
+        Query q1;
 
         /* Tworzymy dwóch przykładowych klientów gabinetu */
         em.getTransaction().begin();
         try {
             /* Tworzymy klienta nr 1 */
             kontakt = new Kontakt(609111131, "37-333", "Swierkowa", 20, 30, "Marzena255@gmail.com");
-            klient = new Klient("Klient2", "321321", "Marzena", "Gąska", new SimpleDateFormat("dd/MM/yyyy").parse("21/04/1998"), "Kobieta", " ", 213141232, kontakt.getId());
             em.persist(kontakt);
+            em.getTransaction().commit();
+
+            /* Pobieramy najnowsze ID kontaktu */
+            q1 =  em.createQuery("SELECT MAX(k.id) FROM Kontakt k");
+            long id_kontaktu = (Long) q1.getSingleResult();
+
+            em.getTransaction().begin();
+            klient = new Klient("Klient2", "321321", "Marzena", "Gąska", new SimpleDateFormat("dd/MM/yyyy").parse("21/04/1998"), "Kobieta", " ", 213141232, id_kontaktu);
             em.persist(klient);
+            em.getTransaction().commit();
 
             /* Tworzmy klienta nr 2*/
+            em.getTransaction().begin();
             kontakt = new Kontakt(688123111, "54-213", "Modrzewiowa", 30, 15, "Monika213@gmail.com");
-            klient = new Klient("Klient", "123123", "Monika", "Butwiak", new SimpleDateFormat("dd/MM/yyyy").parse("10/10/1998"), "Kobieta", " ", 432123141, kontakt.getId());
             em.persist(kontakt);
+            em.getTransaction().commit();
+
+            q1 =  em.createQuery("SELECT MAX(k.id) FROM Kontakt k");
+            id_kontaktu = (Long) q1.getSingleResult();
+
+            em.getTransaction().begin();
+            klient = new Klient("Klient", "123123", "Monika", "Butwiak", new SimpleDateFormat("dd/MM/yyyy").parse("10/10/1998"), "Kobieta", " ", 432123141, id_kontaktu);
             em.persist(klient);
+            em.getTransaction().commit();
 
             /* Tworzymy pracownika nr 1*/
+            em.getTransaction().begin();
             kontakt = new Kontakt(442333214, "32-423", "Sosnowska", 23, 12, "Marlena213@gmail.com");
-            ksiazeczka = new Ksiazeczka_Zdrowia(false, false, false,"brak", false, false, "brak");
-            pracownik = new Pracownik("admin", "admin", "Marlena", "Warszawska", new SimpleDateFormat("dd/MM/yyyy").parse("23/04/1997"), "Kobieta", "", kontakt.getId(), ksiazeczka.getId(), Pracownik.StopienWyksztalcenia.wyksztalcenie_wyzsze, 3000);
-
             em.persist(kontakt);
+            em.getTransaction().commit();
+
+            /* Pobieramy najnowsze ID kontaktu */
+            q1 =  em.createQuery("SELECT MAX(k.id) FROM Kontakt k");
+            id_kontaktu = (Long) q1.getSingleResult();
+
+            em.getTransaction().begin();
+            ksiazeczka = new Ksiazeczka_Zdrowia(false, false, false,"brak", false, false, "brak");
             em.persist(ksiazeczka);
+            em.getTransaction().commit();
+
+            /* Pobieramy najnowsze ID ksiazeczki */
+            q1 =  em.createQuery("SELECT MAX(k.id) FROM Ksiazeczka_Zdrowia k");
+            long id_ksiazeczki = (Long) q1.getSingleResult();
+
+            em.getTransaction().begin();
+            pracownik = new Pracownik("admin", "admin", "Marlena", "Warszawska", new SimpleDateFormat("dd/MM/yyyy").parse("23/04/1997"), "Kobieta", "", id_kontaktu, id_ksiazeczki, Pracownik.StopienWyksztalcenia.wyksztalcenie_wyzsze, 3000);
             em.persist(pracownik);
+            em.getTransaction().commit();
 
             /* Tworzymy pracownika nr 2*/
+            em.getTransaction().begin();
             kontakt = new Kontakt(333245164, "12-213", "Lipowska", 32, 31, "Marysia213@gmail.com");
-            ksiazeczka = new Ksiazeczka_Zdrowia(false, false, false,"brak", false, false, "brak");
-            pracownik = new Pracownik("pracownik1", "123123", "Marja", "Krakowska", new SimpleDateFormat("dd/MM/yyyy").parse("04/04/1995"), "Kobieta", "", kontakt.getId(), ksiazeczka.getId(), Pracownik.StopienWyksztalcenia.wyksztalcenie_wyzsze, 5000);
-
             em.persist(kontakt);
+            em.getTransaction().commit();
+
+            q1 =  em.createQuery("SELECT MAX(k.id) FROM Kontakt k");
+            id_kontaktu = (Long) q1.getSingleResult();
+
+            em.getTransaction().begin();
+            ksiazeczka = new Ksiazeczka_Zdrowia(false, false, false,"brak", false, false, "brak");
             em.persist(ksiazeczka);
+            em.getTransaction().commit();
+
+            q1 =  em.createQuery("SELECT MAX(k.id) FROM Ksiazeczka_Zdrowia k");
+            id_ksiazeczki = (Long) q1.getSingleResult();
+
+            em.getTransaction().begin();
+            pracownik = new Pracownik("pracownik1", "123123", "Marja", "Krakowska", new SimpleDateFormat("dd/MM/yyyy").parse("04/04/1995"), "Kobieta", "", id_kontaktu, id_ksiazeczki, Pracownik.StopienWyksztalcenia.wyksztalcenie_wyzsze, 5000);
             em.persist(pracownik);
+            em.getTransaction().commit();
+
+            /* Tworzymy jedną oferte */
+            em.getTransaction().begin();
+            Usluga przykladowa_usluga = new Usluga("Laseroterapia", "Bezinwazyjna usluga", 100, 40);
+            em.persist(przykladowa_usluga);
+            em.getTransaction().commit();
 
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        em.getTransaction().commit();
     }
 
     public EntityManager getEm() {
@@ -194,16 +240,19 @@ public class MainScreenController {
         if (loaderResource.equals("menu_pracownika_dane_konta")){
             WorkerAccountDataController menuController = loader.getController();
             menuController.setMainController(this);
+            menuController.loadData();
         }
 
         if (loaderResource.equals("menu_pracownika_dane_ksiazeczki")){
             WorkerCardDataController menuController = loader.getController();
             menuController.setMainController(this);
+            menuController.loadData();
         }
 
         if (loaderResource.equals("menu_pracownika_oferta")){
             WorkerOfferSettingController menuController = loader.getController();
             menuController.setMainController(this);
+            menuController.loadData();
         }
 
         if (loaderResource.equals("menu_pracownik_wizyty")){

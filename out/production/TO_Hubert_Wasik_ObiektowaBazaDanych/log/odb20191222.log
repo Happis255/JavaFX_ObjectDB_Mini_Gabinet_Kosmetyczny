@@ -1170,3 +1170,146 @@ Type pliki_java.Pracownik is not enhanced.
 [2019-12-22 18:22:00 #9 type] 
 Type pliki_java.Usluga is not enhanced.
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2019-12-22 18:23:01 #1 store] 
+Database 'C:\Users\Huber\OneDrive\Pulpit\TO_Hubert_Wasik_ObiektowaBazaDanych\src\db\bazaDanychGabinetu.odb' is opened by 12212@DESKTOP-KA8D7DP
+
+[2019-12-22 18:23:01 #2 store] 
+Configuration path: ?
+
+[2019-12-22 18:23:01 #3 type] 
+Type pliki_java.Kontakt is not enhanced.
+
+[2019-12-22 18:23:01 #4 type] 
+Type pliki_java.Uzytkownik is not enhanced.
+
+[2019-12-22 18:23:01 #5 type] 
+Type pliki_java.Klient is not enhanced.
+
+[2019-12-22 18:23:01 #6 type] 
+Type pliki_java.Ksiazeczka_Zdrowia is not enhanced.
+
+[2019-12-22 18:23:01 #7 type] 
+Type pliki_java.Pracownik is not enhanced.
+
+[2019-12-22 18:23:01 #8 type] 
+Type pliki_java.Usluga is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2019-12-22 18:56:47 #1 store] 
+Database 'C:\Users\Huber\OneDrive\Pulpit\TO_Hubert_Wasik_ObiektowaBazaDanych\src\db\bazaDanychGabinetu.odb' has been recovered (tr. 24-25)
+
+[2019-12-22 18:56:47 #2 store] 
+Database 'C:\Users\Huber\OneDrive\Pulpit\TO_Hubert_Wasik_ObiektowaBazaDanych\src\db\bazaDanychGabinetu.odb' is opened by 5612@DESKTOP-KA8D7DP
+
+[2019-12-22 18:56:47 #3 store] 
+Configuration path: ?
+
+[2019-12-22 18:56:47 #4 type] 
+Type pliki_java.Kontakt is not enhanced.
+
+[2019-12-22 18:56:47 #5 type] 
+Type pliki_java.Uzytkownik is not enhanced.
+
+[2019-12-22 18:56:47 #6 type] 
+Type pliki_java.Klient is not enhanced.
+
+[2019-12-22 18:56:47 #7 type] 
+Type pliki_java.Ksiazeczka_Zdrowia is not enhanced.
+
+[2019-12-22 18:56:47 #8 type] 
+Type pliki_java.Pracownik is not enhanced.
+
+[2019-12-22 18:56:47 #9 type] 
+Type pliki_java.Usluga is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2019-12-22 18:57:23 #1 store] 
+Database 'C:\Users\Huber\OneDrive\Pulpit\TO_Hubert_Wasik_ObiektowaBazaDanych\src\db\bazaDanychGabinetu.odb' is opened by 23808@DESKTOP-KA8D7DP
+
+[2019-12-22 18:57:23 #2 store] 
+Configuration path: ?
+
+[2019-12-22 18:57:23 #3 type.registry] 
+New type pliki_java.Kontakt
+
+[2019-12-22 18:57:23 #4 type] 
+Type pliki_java.Kontakt is not enhanced.
+
+[2019-12-22 18:57:23 #5 type.registry] 
+New type pliki_java.Uzytkownik
+
+[2019-12-22 18:57:23 #6 type.registry] 
+New type pliki_java.Klient
+
+[2019-12-22 18:57:23 #7 type] 
+Type pliki_java.Uzytkownik is not enhanced.
+
+[2019-12-22 18:57:23 #8 type] 
+Type pliki_java.Klient is not enhanced.
+
+[2019-12-22 18:57:23 #9 type.registry] 
+New type pliki_java.Klient$StatusKlienta
+
+[2019-12-22 18:57:23 #10 type.registry] 
+New type pliki_java.Ksiazeczka_Zdrowia
+
+[2019-12-22 18:57:23 #11 type] 
+Type pliki_java.Ksiazeczka_Zdrowia is not enhanced.
+
+[2019-12-22 18:57:23 #12 type.registry] 
+New type pliki_java.Pracownik
+
+[2019-12-22 18:57:23 #13 type] 
+Type pliki_java.Pracownik is not enhanced.
+
+[2019-12-22 18:57:23 #14 type.registry] 
+New type pliki_java.Pracownik$StopienWyksztalcenia
+
+[2019-12-22 18:57:23 #15 type.registry] 
+New type pliki_java.Usluga
+
+[2019-12-22 18:57:23 #16 type] 
+Type pliki_java.Usluga is not enhanced.
+
+[2019-12-22 18:57:23 #17 type.registry] 
+New type pliki_java.Wizyta
+
+[2019-12-22 18:57:23 #18 type] 
+Type pliki_java.Wizyta is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2019-12-22 18:58:08 #1 store] 
+Database 'C:\Users\Huber\OneDrive\Pulpit\TO_Hubert_Wasik_ObiektowaBazaDanych\src\db\bazaDanychGabinetu.odb' has been recovered (tr. 1-20)
+
+[2019-12-22 18:58:08 #2 store] 
+Database 'C:\Users\Huber\OneDrive\Pulpit\TO_Hubert_Wasik_ObiektowaBazaDanych\src\db\bazaDanychGabinetu.odb' is opened by 4064@DESKTOP-KA8D7DP
+
+[2019-12-22 18:58:08 #3 store] 
+Configuration path: ?
+
+[2019-12-22 18:58:08 #4 type] 
+Type pliki_java.Kontakt is not enhanced.
+
+[2019-12-22 18:58:08 #5 type] 
+Type pliki_java.Uzytkownik is not enhanced.
+
+[2019-12-22 18:58:08 #6 type] 
+Type pliki_java.Klient is not enhanced.
+
+[2019-12-22 18:58:08 #7 type] 
+Type pliki_java.Ksiazeczka_Zdrowia is not enhanced.
+
+[2019-12-22 18:58:08 #8 type] 
+Type pliki_java.Pracownik is not enhanced.
+
+[2019-12-22 18:58:08 #9 type] 
+Type pliki_java.Usluga is not enhanced.
+
+[2019-12-22 18:58:08 #10 type] 
+Type pliki_java.Wizyta is not enhanced.
+

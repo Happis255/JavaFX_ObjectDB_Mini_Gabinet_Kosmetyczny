@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="v0.5 - trzeba zapisywac id w tablicy zeby mozna bylo dobra usluge usunac">
-      <change afterPath="$PROJECT_DIR$/src/pliki_java/Wizyta.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="v0.6 - dzialaja uslugi">
+      <change afterPath="$PROJECT_DIR$/src/ModelTabeli/WizytaGabinetu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/Controller/Worker/WorkerOfferSettingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/Controller/Worker/WorkerOfferSettingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/Controller/MainScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/Controller/MainScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/Controller/Worker/WorkerAppoitmentSettingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/Controller/Worker/WorkerAppoitmentSettingController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/db/bazaDanychGabinetu.odb" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/db/bazaDanychGabinetu.odb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/db/bazaDanychGabinetu.odb$" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/db/bazaDanychGabinetu.odb$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/fxml/Worker/WorkerAppoitmentSetting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/fxml/Worker/WorkerAppoitmentSetting.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/log/odb20191222.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/log/odb20191222.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MainScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Worker/WorkerAppoitmentSettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Worker/WorkerAppoitmentSettingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Worker/WorkerOfferSettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Worker/WorkerOfferSettingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ModelTabeli/OfertaGabinetu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModelTabeli/OfertaGabinetu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/bazaDanychGabinetu.odb" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/bazaDanychGabinetu.odb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/bazaDanychGabinetu.odb$" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/bazaDanychGabinetu.odb$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/Worker/WorkerAppoitmentSetting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/Worker/WorkerAppoitmentSetting.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/log/odb20191222.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/odb20191222.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,19 +118,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src\fxml\Client" />
-      <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src\fxml\Worker" />
-      <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src\pliki_java" />
-      <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src" />
-      <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pliki_java" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Controller" />
-      <recent name="Kontrolery" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src\fxml\Client" />
@@ -137,6 +127,17 @@
       <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src\fxml" />
       <recent name="C:\Users\Huber\OneDrive\Pulpit\TO_Hubert_Wasik_ObiektowaBazaDanych\src\assets" />
       <recent name="C:\Users\Huber\OneDrive\Pulpit\TO_Hubert_Wasik_ObiektowaBazaDanych\src\fxml" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Controller" />
+      <recent name="Kontrolery" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src\fxml\Client" />
+      <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src\fxml\Worker" />
+      <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src\pliki_java" />
+      <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych\src" />
+      <recent name="C:\Users\Huber\Desktop\TO_Hubert_Wasik_ObiektowaBazaDanych" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -243,7 +244,7 @@
       <workItem from="1576921764476" duration="69000" />
       <workItem from="1576929252255" duration="874000" />
       <workItem from="1576949125059" duration="128000" />
-      <workItem from="1577022297116" duration="11773000" />
+      <workItem from="1577022297116" duration="14008000" />
     </task>
     <task id="LOCAL-00001" summary="v0.5 - trzeba zapisywac id w tablicy zeby mozna bylo dobra usluge usunac">
       <created>1577032328854</created>
@@ -252,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577032328854</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v0.6 - dzialaja uslugi">
+      <created>1577036047746</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577036047747</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +283,7 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="v0.5 - trzeba zapisywac id w tablicy zeby mozna bylo dobra usluge usunac" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.5 - trzeba zapisywac id w tablicy zeby mozna bylo dobra usluge usunac" />
+    <MESSAGE value="v0.6 - dzialaja uslugi" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.6 - dzialaja uslugi" />
   </component>
 </project>

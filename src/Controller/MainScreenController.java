@@ -264,6 +264,7 @@ public class MainScreenController {
         if (loaderResource.equals("menu_pracownik_wizyty")){
             WorkerAppoitmentSettingController menuController = loader.getController();
             menuController.setMainController(this);
+            menuController.loadData();
         }
 
         if (loaderResource.equals("menu_klienta")){

@@ -59,23 +59,55 @@ public class WorkerOfferSettingController {
 
     @FXML
     public void addOffer(ActionEvent actionEvent) {
+        try {
+            String nazwa = offer_name.getText();
+            String opis = offer_describe.getText();
+            int cena = Integer.parseInt(offer_price.getText());
+            int czas = Integer.parseInt(offer_time.getText());
+
+            if (nazwa.length() > 1 && opis.length() > 1 && cena > 0 && czas > 0) {
+                mainController.getEm().getTransaction().begin();
+                Usluga przykladowa_usluga = new Usluga(nazwa, opis, cena, czas);
+                mainController.getEm().persist(przykladowa_usluga);
+                mainController.getEm().getTransaction().commit();
+                mainController.switchScreen("menu_pracownika_oferta", true);
+            }
+        } catch (NumberFormatException e){
+            System.out.println("Bledne dane w formach.");
+        }
     }
 
     @FXML
     public void removeOffer(ActionEvent actionEvent) {
+        try {
+            OfertaGabinetu zaznaczony = tabela_uslug.getSelectionModel().getSelectedItem();
+            if (zaznaczony.getId() > 0) {
+
+                Query q1 = mainController.getEm().createQuery("SELECT p FROM Usluga p WHERE p.id = :id");
+                q1.setParameter("id", zaznaczony.getId());
+                Usluga finder = (Usluga) q1.getSingleResult();
+
+                Usluga do_usuniecia = mainController.getEm().find(Usluga.class, finder);
+
+                mainController.getEm().getTransaction().begin();
+                mainController.getEm().remove(do_usuniecia);
+                mainController.getEm().getTransaction().commit();
+
+                mainController.switchScreen("menu_pracownika_oferta", true);
+            }
+        } catch (NullPointerException e){
+            System.out.println("Nic nie zaznaczono");
+        }
     }
 
     public void loadData(){
-        /* Dodana zostaje przykładowa usługa */
-
-
         try {
             Query q1 = mainController.getEm().createQuery("SELECT p FROM Usluga p");
             List lista_uslug = q1.getResultList();
             Usluga temp = null;
             while (!lista_uslug.isEmpty()) {
                 temp = (Usluga) lista_uslug.get(0);
-                lista_danych.add(new OfertaGabinetu(temp.getNazwa_uslugi(), temp.getOpis_uslugi(), temp.getKoszt(), temp.getCzas()));
+                lista_danych.add(new OfertaGabinetu(temp.getNazwa_uslugi(), temp.getOpis_uslugi(), temp.getKoszt(), temp.getCzas(), temp.getId()));
                 lista_uslug.remove(0);
             }
         } catch (Exception e){

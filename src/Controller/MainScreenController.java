@@ -141,6 +141,12 @@ public class MainScreenController {
             em.persist(przykladowa_usluga);
             em.getTransaction().commit();
 
+            /* Tworzymy appoitment */
+            em.getTransaction().begin();
+            Wizyta przykladowa_wizyta = new Wizyta(klient.getId(), pracownik.getId(), przykladowa_usluga.getId(), new SimpleDateFormat("dd/MM/yyyy").parse("10/01/2019"), "brak");
+            em.persist(przykladowa_wizyta);
+            em.getTransaction().commit();
+
         } catch (ParseException e) {
             e.printStackTrace();
         }

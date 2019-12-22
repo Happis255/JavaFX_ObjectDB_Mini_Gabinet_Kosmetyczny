@@ -6,12 +6,14 @@ public class OfertaGabinetu {
     String opis_uslugi;
     int cena;
     int czas;
+    long id;
 
-    public OfertaGabinetu(String nazwa, String opis, int cena, int czas) {
+    public OfertaGabinetu(String nazwa, String opis, int cena, int czas, long id) {
         this.nazwa_uslugi = nazwa;
         this.opis_uslugi = opis;
         this.cena = cena;
         this.czas = czas;
+        this.id = id;
     }
 
     public String getNazwa_uslugi() {
@@ -44,5 +46,9 @@ public class OfertaGabinetu {
 
     public void setCzas(int czas) {
         this.czas = czas;
+    }
+
+    public long getId() {
+        return id;
     }
 }

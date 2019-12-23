@@ -101,24 +101,21 @@ public class ClientAppoitmentCreatorController {
         }
 
         /* Tworzymy wątek do aktualizacji ceny */
-        new Thread()
-        {
-            public void run() {
-                String nazwa_wybranej_uslugi = " ";
-                while (true){
-                    try {
-                        nazwa_wybranej_uslugi = (String) serviceInput.getValue();
-                    } catch (Exception ignored){
-                    }
-                    if (nazwa_wybranej_uslugi != null) {
-                        Query q3 =  mainController.getEm().createQuery("SELECT p FROM Usluga p WHERE p.nazwa_uslugi = :nazwa");
-                        q3.setParameter("nazwa", nazwa_wybranej_uslugi);
+        new Thread(() -> {
+            String nazwa_wybranej_uslugi = " ";
+            while (true){
+                try {
+                    nazwa_wybranej_uslugi = (String) serviceInput.getValue();
+                } catch (Exception ignored){
+                }
+                if (nazwa_wybranej_uslugi != null) {
+                    Query q3 =  mainController.getEm().createQuery("SELECT p FROM Usluga p WHERE p.nazwa_uslugi = :nazwa");
+                    q3.setParameter("nazwa", nazwa_wybranej_uslugi);
 
-                        Usluga wybrana_usluga = (Usluga) q3.getSingleResult();
-                        price.setText(wybrana_usluga.getKoszt() + " zł");
-                    }
+                    Usluga wybrana_usluga = (Usluga) q3.getSingleResult();
+                    price.setText(wybrana_usluga.getKoszt() + " zł");
                 }
             }
-        }.start();
+        }).start();
     }
 }

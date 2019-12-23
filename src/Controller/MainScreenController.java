@@ -301,5 +301,4 @@ public class MainScreenController {
             FadeIn(1000, MainStackPane.getChildren().get(0));
         }
     }
-
 }

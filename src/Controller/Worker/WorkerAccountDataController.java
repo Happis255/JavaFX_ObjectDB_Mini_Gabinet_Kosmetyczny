@@ -22,9 +22,10 @@ import java.util.List;
 
 public class WorkerAccountDataController {
 
-
     @FXML
     public Text wokrerName;
+
+    @FXML
     public Text workerSurname;
 
     @FXML

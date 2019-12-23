@@ -7,9 +7,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import pliki_java.Klient;
-import pliki_java.Kontakt;
 import pliki_java.Pracownik;
-
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import java.util.List;

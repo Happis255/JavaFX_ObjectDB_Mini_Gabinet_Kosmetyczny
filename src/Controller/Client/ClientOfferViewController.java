@@ -65,5 +65,4 @@ public class ClientOfferViewController {
         czas.setCellValueFactory(new PropertyValueFactory<>("czas"));
         tabela_uslug.setItems(lista_danych);
     }
-
 }

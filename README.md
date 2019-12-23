@@ -1,7 +1,7 @@
 # Mini-Gabinet Kosmetyczny
 
 Aplikacja prezentuje podstawowe zastosowanie obiektowej bazy danych z wykorzystaniem "objectDB" - https://www.objectdb.com/
-Język: Java, Obiektowy OQL
+Język: Java, OQL
 
 ### Struktura folderów
 

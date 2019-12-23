@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="v0.6 - dzialaja uslugi">
-      <change afterPath="$PROJECT_DIR$/src/ModelTabeli/WizytaGabinetu.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="v1.0 - dziala po stronie pracownika">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/Controller/MainScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/Controller/MainScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/Controller/Worker/WorkerAppoitmentSettingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/Controller/Worker/WorkerAppoitmentSettingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/db/bazaDanychGabinetu.odb" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/db/bazaDanychGabinetu.odb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/db/bazaDanychGabinetu.odb$" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/db/bazaDanychGabinetu.odb$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/fxml/Worker/WorkerAppoitmentSetting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/fxml/Worker/WorkerAppoitmentSetting.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/log/odb20191222.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TO_Hubert_Wasik_ObiektowaBazaDanych/log/odb20191222.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Client/ClientAccountDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Client/ClientAccountDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Client/ClientAppoitmentCreatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Client/ClientAppoitmentCreatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Client/ClientAppoitmentViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Client/ClientAppoitmentViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Client/ClientMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Client/ClientMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Client/ClientOfferViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Client/ClientOfferViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MainScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Worker/WorkerAppoitmentSettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Worker/WorkerAppoitmentSettingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Worker/WorkerOfferSettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Worker/WorkerOfferSettingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Worker/WorkerMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Worker/WorkerMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/bazaDanychGabinetu.odb" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/bazaDanychGabinetu.odb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/bazaDanychGabinetu.odb$" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/bazaDanychGabinetu.odb$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log/odb20191222.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/odb20191222.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxml/Client/ClientAppoitmentCreator.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/Client/ClientAppoitmentCreator.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxml/Client/MainClient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/Client/MainClient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxml/Worker/MainWorker.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/Worker/MainWorker.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log/odb20191222.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pliki_java/Klient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pliki_java/Klient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pliki_java/Uzytkownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pliki_java/Uzytkownik.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +246,8 @@
       <workItem from="1576921764476" duration="69000" />
       <workItem from="1576929252255" duration="874000" />
       <workItem from="1576949125059" duration="128000" />
-      <workItem from="1577022297116" duration="14008000" />
+      <workItem from="1577022297116" duration="14050000" />
+      <workItem from="1577108763803" duration="4266000" />
     </task>
     <task id="LOCAL-00001" summary="v0.5 - trzeba zapisywac id w tablicy zeby mozna bylo dobra usluge usunac">
       <created>1577032328854</created>
@@ -260,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577036047747</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="v1.0 - dziala po stronie pracownika">
+      <created>1577038206611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577038206611</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +294,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="v0.5 - trzeba zapisywac id w tablicy zeby mozna bylo dobra usluge usunac" />
     <MESSAGE value="v0.6 - dzialaja uslugi" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.6 - dzialaja uslugi" />
+    <MESSAGE value="v1.0 - dziala po stronie pracownika" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0 - dziala po stronie pracownika" />
   </component>
 </project>

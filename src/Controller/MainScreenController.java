@@ -275,21 +275,25 @@ public class MainScreenController {
         if (loaderResource.equals("menu_klienta_dane")){
             ClientAccountDataController menuController = loader.getController();
             menuController.setMainController(this);
+            menuController.loadData();
         }
 
         if (loaderResource.equals("menu_klienta_oferta")){
             ClientOfferViewController menuController = loader.getController();
             menuController.setMainController(this);
+            menuController.loadData();
         }
 
         if (loaderResource.equals("menu_klienta_zapisz")){
             ClientAppoitmentCreatorController menuController = loader.getController();
             menuController.setMainController(this);
+            menuController.loadData();
         }
 
         if (loaderResource.equals("menu_klienta_wizyty")){
             ClientAppoitmentViewController menuController = loader.getController();
             menuController.setMainController(this);
+            menuController.loadData();
         }
 
         setScreen(pane);

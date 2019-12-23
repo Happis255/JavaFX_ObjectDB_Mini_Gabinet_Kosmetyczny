@@ -33,7 +33,14 @@ public class Klient extends Uzytkownik implements Serializable {
     }
 
     public enum StatusKlienta{
-        NOWY_UZYTKOWNIK, STALY_KLIENT, KLIENT_PREMIUM;
+        NOWY_UZYTKOWNIK ("Nowy użytkownik"), STALY_KLIENT ("Stały klient"), KLIENT_PREMIUM ("Klient premium");
+        String nazwa;
+        StatusKlienta(String nazwa){
+            this.nazwa = nazwa;
+        }
+        public String getNazwa(){
+            return nazwa;
+        }
     }
 
     public long getId() {

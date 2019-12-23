@@ -82,6 +82,8 @@ public class Uzytkownik implements Serializable {
         this.informacje_dodatkowe = informacje_dodatkowe;
     }
 
+
+
     @Override
     public String toString() {
         return "Uzytkownik{" +

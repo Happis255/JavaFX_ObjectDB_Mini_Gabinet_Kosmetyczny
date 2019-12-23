@@ -38,4 +38,10 @@ public class ClientMenuController {
         Platform.exit();
         System.exit(0);
     }
+
+    @FXML
+    public void log_out(ActionEvent actionEvent) {
+        mainController.setKlient_zalogowany_w_systemie(null);
+        mainController.switchScreen("menu", true);
+    }
 }

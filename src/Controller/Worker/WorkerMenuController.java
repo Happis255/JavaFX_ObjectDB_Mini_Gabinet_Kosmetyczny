@@ -41,4 +41,10 @@ public class WorkerMenuController {
         Platform.exit();
         System.exit(0);
     }
+
+    @FXML
+    public void log_out(ActionEvent actionEvent) {
+        mainController.setPracownik_zalogowany_w_systemie(null);
+        mainController.switchScreen("menu", true);
+    }
 }

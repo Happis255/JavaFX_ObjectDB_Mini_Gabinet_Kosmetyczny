@@ -17,16 +17,16 @@
             <Image url="@../../assets/Gracja LOGO.png" />
          </image>
       </ImageView>
-      <Button id="menu-buttons" layoutX="223.0" layoutY="704.0" mnemonicParsing="false" onAction="#ManageAppoitment" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Zarządzaj wizytami" />
+      <Button id="menu-buttons" layoutX="222.0" layoutY="650.0" mnemonicParsing="false" onAction="#ManageAppoitment" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Zarządzaj wizytami" />
       <Text fill="WHITE" layoutX="237.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu pracownika" wrappingWidth="228.5859375">
          <font>
             <Font name="Calibri Bold" size="30.0" />
          </font>
       </Text>
-      <Button id="menu-buttons" layoutX="223.0" layoutY="649.0" mnemonicParsing="false" onAction="#ManageOffer" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Zarządzaj ofertą" />
-      <Button id="menu-buttons" layoutX="223.0" layoutY="594.0" mnemonicParsing="false" onAction="#ManageCard" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Zarządzaj książeczką zdr." />
-      <Button id="menu-buttons" layoutX="223.0" layoutY="539.0" mnemonicParsing="false" onAction="#ViewAccountData" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Dane twojego konta" />
-      <Button id="menu-buttons" layoutX="223.0" layoutY="759.0" mnemonicParsing="false" onAction="#log_out" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Wyloguj" />
-      <Button id="menu-buttons" layoutX="224.0" layoutY="814.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Wyjście" />
+      <Button id="menu-buttons" layoutX="222.0" layoutY="595.0" mnemonicParsing="false" onAction="#ManageOffer" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Zarządzaj ofertą" />
+      <Button id="menu-buttons" layoutX="222.0" layoutY="540.0" mnemonicParsing="false" onAction="#ManageCard" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Zarządzaj książeczką zdr." />
+      <Button id="menu-buttons" layoutX="222.0" layoutY="485.0" mnemonicParsing="false" onAction="#ViewAccountData" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Dane twojego konta" />
+      <Button id="menu-buttons" layoutX="222.0" layoutY="705.0" mnemonicParsing="false" onAction="#log_out" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Wyloguj" />
+      <Button id="menu-buttons" layoutX="223.0" layoutY="760.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="255.0" stylesheets="@../style.css" text="Wyjście" />
    </children>
 </Pane>
